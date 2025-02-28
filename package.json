@@ -1,0 +1,15 @@
+{
+    "name": "narvesto",
+    "private": true,
+    "workspaces": [
+        "frontend",
+        "backend"
+    ],
+    "scripts": {
+        "install": "npm install",
+        "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
