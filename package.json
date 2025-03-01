@@ -1,24 +1,17 @@
-
-
-
-
-
-
-
-
-
 {
     "name": "narvesto",
     "private": true,
     "workspaces": [
-      "frontend",
-      "backend"
+        "frontend",
+        "backend"
     ],
     "scripts": {
-      "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
+        "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\""
     },
     "devDependencies": {
-      "concurrently": "^8.2.2"
+        "concurrently": "^8.2.2"
+    },
+    "dependencies": {
+        "react-countup": "^6.5.3"
     }
-  }
-  
+}
