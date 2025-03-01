@@ -2,15 +2,17 @@
     "name": "narvesto",
     "private": true,
     "workspaces": [
-      "frontend",
-      "backend"
+        "frontend",
+        "backend"
     ],
     "scripts": {
       "dev": "concurrently \"npm --prefix backend run dev\" \"npm --prefix frontend run dev\"",
       "build": "concurrently \"npm --prefix backend run build\" \"npm --prefix frontend run build\""
     },
     "devDependencies": {
-      "concurrently": "^8.2.2"
+        "concurrently": "^8.2.2"
+    },
+    "dependencies": {
+        "react-countup": "^6.5.3"
     }
-  }
-  
+}

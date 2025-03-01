@@ -1,9 +1,12 @@
-import Hello from "@/components/Hello";
+import ShortStats from "@/components/home/ShortStats";
+
 
 export default function Home() {
   return (
-  <>
-  <Hello/>
-  </>
+    <div>
+     
+    
+    <ShortStats/>
+    </div>
   );
 }
