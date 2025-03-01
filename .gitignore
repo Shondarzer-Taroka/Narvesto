@@ -138,6 +138,7 @@ frontend/out/
 # Express.js Backend Build
 backend/build/
 
+garbase
 # production
 /build
 
@@ -164,3 +165,4 @@ backend/.vercel
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.vercel
