@@ -10,7 +10,7 @@ interface ProgressProps extends React.ComponentProps<typeof ProgressPrimitive.Ro
   totalSlots: number;
 }
 
-function Progress({ className, bookedSlots, totalSlots, ...props }: ProgressProps) {
+function Progress({  bookedSlots, totalSlots, ...props }: ProgressProps) {
   const value = (bookedSlots / totalSlots) * 100;
 
   return (
@@ -20,7 +20,7 @@ function Progress({ className, bookedSlots, totalSlots, ...props }: ProgressProp
         data-slot="progress"
         className={cn(
           "bg-primary/20 relative h-2 w-full overflow-hidden rounded-full",
-          className
+    
         )}
         {...props}
       >

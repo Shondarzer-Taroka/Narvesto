@@ -1,19 +1,32 @@
 "use client"
-import React, { useState } from "react";
-import { IoCartOutline, IoLocationOutline } from "react-icons/io5";
-import { IoIosHeart, IoMdHeartEmpty } from "react-icons/io";
+import React from "react";
+import {  IoLocationOutline } from "react-icons/io5";
+import {  IoMdHeartEmpty } from "react-icons/io";
 import { FaBuilding } from "react-icons/fa";
 import Image from "next/image";
 import { Progress } from "../ui/progress";
 import img from '@/asset/image/home/product.webp';
-import { bgColors, colors } from "@/utilites/color";
+import { bgColors } from "@/utilites/color";
 
 
 // Dynamic color variable
+interface ProductCardProps {
+    item: {
+        companyName: string;
+        image: string;
+        location: string;
+        details: string;
+        avlSlot: number;
+        totalSlot: number;
+        slotPrice: number;
+        investmentType: string;
+        slotOwner: { name: string; email: string }[];
+    };
+}
 
 
-const ProductCard = () => {
-    const [isFavorite, setIsFavorite] = useState(false);
+const ProductCard: React.FC<ProductCardProps> = () => {
+   
 
     return (
         <div className="border border-gray-300 rounded-xl p-4 w-full bg-white  transition ">
@@ -30,17 +43,10 @@ const ProductCard = () => {
 
                 {/* Favorite Icon */}
                 <div className="p-2 rounded-full bg-gray-600 absolute top-2 right-2 cursor-pointer">
-                    {isFavorite ? (
-                        <IoIosHeart
-                            onClick={() => setIsFavorite(false)}
-                            className="text-[#0FABCA] text-[1.4rem]"
-                        />
-                    ) : (
-                        <IoMdHeartEmpty
-                            onClick={() => setIsFavorite(true)}
-                            className="text-white text-[1.4rem]"
-                        />
-                    )}
+                    
+                        <IoMdHeartEmpty/>
+                            
+                      
                 </div>
             </div>
 
@@ -61,11 +67,19 @@ const ProductCard = () => {
                 {/* Location & Company */}
                 <div className="flex items-center gap-4 text-gray-700 text-sm mt-3">
                     <div className="flex items-center gap-1">
-                        <IoLocationOutline className="text-[1.2rem] text-gray-500" />
-                        <span>Dhaka, Bangladesh</span>
+
+                        <div className="text-[1.2rem] text-gray-500">
+                        <IoLocationOutline  /> 
+                        </div>
+                   
+                        <span>Dhakca, Bangladesh</span>
                     </div>
                     <div className="flex items-center gap-1">
-                        <FaBuilding className="text-[1.2rem] text-gray-500" />
+
+                        <div className="text-[1.2rem] text-gray-500">
+                        <FaBuilding  />
+                        </div>
+                        
                         <span>Skyline Ltd.</span>
                     </div>
                 </div>
@@ -81,7 +95,7 @@ const ProductCard = () => {
                        
 
                         <button
-                            className={`py-2 text-white px-4 border border ${bgColors.primary} hover: hover:text-white rounded-md flex items-center gap-2 text-sm  transition-all`}
+                            className={`py-2 text-white px-4 border ${bgColors.primary} hover: hover:text-white rounded-md flex items-center gap-2 text-sm  transition-all`}
                         >
                             View Details
                         </button>

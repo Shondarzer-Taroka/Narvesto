@@ -9,16 +9,40 @@ import Image from 'next/image';
 import { FaCircleNotch } from "react-icons/fa";
 
 const FAQ = () => {
-  const [open, setOpen] = useState(null);
+  const [open, setOpen] = useState<number | null>(null);
 
   const faqData = [
-    { question: 'Administrative Support', heading: "Administrative Support", image: img1, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', li: ['Email and calendar management', 'Appointment scheduling', 'Data entry and document organization', 'Travel planning and itinerary management'] },
-    { question: 'Customer Support', heading: "Customer Support", image: img2, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', li: ['Responding to customer inquiries', 'Live chat and helpdesk support', 'Managing customer feedback and reviews', 'Order processing and tracking'] },
-    { question: 'Data & Research Assistance', heading: "Data & Research Assistance", image: img3, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', li: ['Market research and competitor analysis', 'Industry trend reports', 'Lead generation and data collection', 'Organizing research into actionable insights'] },
-    { question: "E-Commerce Support", heading: "E-Commerce Support", image: img4, details: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.', li: ['Product listing and inventory management', 'Processing orders and returns', 'Handling customer inquiries and reviews', 'Storefront optimization for better sales'] },
+    {
+      question: 'Administrative Support',
+      heading: "Administrative Support",
+      image: img1,
+      details: 'Lorem ipsum...',
+      li: ['Email and calendar management', 'Appointment scheduling', 'Data entry and document organization', 'Travel planning and itinerary management'],
+    },
+    {
+      question: 'Customer Support',
+      heading: "Customer Support",
+      image: img2,
+      details: 'Lorem ipsum...',
+      li: ['Responding to customer inquiries', 'Live chat and helpdesk support', 'Managing customer feedback and reviews', 'Order processing and tracking'],
+    },
+    {
+      question: 'Data & Research Assistance',
+      heading: "Data & Research Assistance",
+      image: img3,
+      details: 'Lorem ipsum...',
+      li: ['Market research and competitor analysis', 'Industry trend reports', 'Lead generation and data collection', 'Organizing research into actionable insights'],
+    },
+    {
+      question: "E-Commerce Support",
+      heading: "E-Commerce Support",
+      image: img4,
+      details: 'Lorem ipsum...',
+      li: ['Product listing and inventory management', 'Processing orders and returns', 'Handling customer inquiries and reviews', 'Storefront optimization for better sales'],
+    }
   ];
-
-  const toggleOpen = (index) => {
+  
+  const toggleOpen = (index:number ) => {
     setOpen(open === index ? null : index);
   };
 
