@@ -37,7 +37,7 @@ const ShortStats = () => {
 
               {/*count down  */}
          <section className='bg-gray-100 flex-1 w-full py-44 px-10'>
-            <div className='flex items-center gap-14 border-b border-gray-200 pb-8'>
+            <div className='flex items-center gap-10 border-b border-gray-200 pb-8'>
               <div >
               <h1 className={`${colors.third} font-semibold text-3xl flex min-w-20`}>$ <Count count={48}/> </h1>
               <p className={`${colors.secondary} w-3`}>billions</p>
@@ -50,7 +50,7 @@ const ShortStats = () => {
 
 
             </div>
-            <div className='flex border-b border-gray-200 pb-8 items-center mt-8 gap-14'>
+            <div className='flex border-b border-gray-200 pb-8 items-center mt-8 gap-10'>
               <div >
               <h1 className={`${colors.third} font-semibold text-3xl flex min-w-20`}>$ <Count count={30}/> </h1>
               <p className={`${colors.secondary} w-3`}>Employees</p>
@@ -63,7 +63,7 @@ const ShortStats = () => {
 
 
             </div>
-            <div className='flex border-gray-200 pb-8 items-center mt-8 gap-14'>
+            <div className='flex border-gray-200 pb-8 items-center mt-8 gap-10'>
               <div >
               <h1 className={`${colors.third} font-semibold text-3xl flex min-w-20`}>$ <Count count={98}/> </h1>
               <p className={`${colors.secondary} w-3`}>Production Sites</p>
