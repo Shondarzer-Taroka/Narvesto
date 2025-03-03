@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { bgColors, colors, gradiant } from "@/utilites/color";
+import { bgColors, colors } from "@/utilites/color";
 import Image from "next/image";
 import { CiPlay1 } from "react-icons/ci";
 import { ChevronDownIcon } from "lucide-react";
@@ -39,7 +39,11 @@ const FAQAccordion = () => {
         <section className="relative">
           <Image src={img} alt="img" className="rounded-md" />
           <div className={`${bgColors.primary} absolute top-1/2 left-[45%] w-12 rounded-full mx-auto text-center text-white animate-pulse`}>
-            <CiPlay1 className="text-5xl ml-1 p-2" />
+            
+            <div className=" ml-1 p-2">
+            <CiPlay1 size={40}  />
+            </div>
+            
           </div>
         </section>
 
