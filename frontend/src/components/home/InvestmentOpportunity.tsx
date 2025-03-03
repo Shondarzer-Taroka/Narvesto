@@ -75,7 +75,7 @@ const investPlace = [
 
 const InvestmentOpportunity: React.FC = () => {
     return (
-        <div className='container p-8 mt-16 mx-auto'>
+        <div className='container p-4 mt-16 mx-auto'>
             {/* Heading Section */}
             <div className="text-center mb-8">
                 <h1 className={`text-3xl font-semibold ${colors.primary}`}>Explore Investment Opportunities</h1>
