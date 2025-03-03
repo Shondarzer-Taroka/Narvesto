@@ -17,4 +17,8 @@ interface Color  {
     third:'bg-[#fb257771]'
  }
  
+ export const gradiant = {
+   primary: "bg-gradient-to-br from-[#14032f82] to-[#9233eae3]",
+   secondary: "bg-gradient-to-br from-[#7a46c2] to-[#c084fc] opacity-0 "
+ }
  
