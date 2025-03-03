@@ -21,6 +21,7 @@
     "next": "15.2.0",
     "postcss": "^8.5.3",
     "react": "^19.0.0",
+    "react-countup": "^6.5.3",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
     "tailwind-merge": "^3.0.2",
@@ -34,7 +35,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "15.2.0",
-    "tailwindcss": "^4.0.9",
+    "picocolors": "^1.1.1",
+    "tailwindcss": "^4",
     "typescript": "^5"
   }
 }

@@ -10,10 +10,11 @@
         "build": "concurrently \"npm --prefix backend run build\" \"npm --prefix frontend run build\""
     },
     "devDependencies": {
-        "concurrently": "^8.2.2"
+        "concurrently": "^8.2.2",
+        "picocolors": "^1.1.1"
     },
     "dependencies": {
-        "@tailwindcss/oxide": "^4.0.9",
+        "postcss": "^8.5.3",
         "react-countup": "^6.5.3",
         "shadcdn": "^0.0.8"
     }
