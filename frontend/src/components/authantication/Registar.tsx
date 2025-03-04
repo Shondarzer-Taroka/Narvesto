@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import image from '@/asset/image/authantication/meeting-594091_1280.jpg';
 import Image from 'next/image';
 import { bgColors } from '@/utilites/color';
@@ -8,6 +9,16 @@ import user3 from '@/asset/image/authantication/user3.jpg'
 import GlassCalendar from './GlassCalendar';
 
 const Registar = () => {
+    const [email, setEmail] = useState<string>('')
+    const emailHandler = (e: React.ChangeEvent<HTMLInputElement>)=>{
+        const email = e.target.value;
+        setEmail(email)
+    }
+    
+    const emailVerrifyHandler = async()=>{
+      
+    }
+
     return (
         <div className='bg-gray-100 min-h-screen flex items-center justify-center'>
             <div className='container min-h-screen p-4 rounded-2xl flex shadow-2xl mx-auto bg-gradient-to-br from-gray-200 to-[#f0e8c6] '>
@@ -16,10 +27,36 @@ const Registar = () => {
 
 <button className='bg-transparent py-2 px-3 rounded-2xl border border-black'>Narvesto</button>
 
-<div className='text-center'>
+<div className='text-center mt-16'>
     <h1 className='text-2xl'>Create an Account</h1>
     <p className='text-gray-700 mt-2'>Sign up and stay with us</p>
 
+</div>
+
+
+<div>
+    <form >
+
+    <div className="w-full md:w-[80%] mt-8">
+            <label
+                htmlFor="name"
+                className="text-[15px] text-gray-700 text-text font-[400]"
+            >
+                Email <span className="text-red-500">*</span>
+            </label>
+            <input
+            onChange={emailHandler}
+                type="email"
+                name="email"
+                id="name"
+                value={email}
+                placeholder="Your Email"
+                className="border-border border rounded-md outline-none bg-white px-4 w-full mt-1 py-3 focus:border-primary transition-colors duration-300"
+            />
+            <p onClick={emailVerrifyHandler}  className='text-right text-green-500 mt-2 cursor-pointer'>Verify Email</p>
+        </div>
+
+    </form>
 </div>
 
                 </section>
@@ -27,7 +64,7 @@ const Registar = () => {
                 {/* Right Section */}
                 <section className=' flex items-center  justify-center'>
                     <div className='relative'>
-                        <Image src={image} alt='img' className='rounded-3xl' />
+                        <Image src={image} alt='img' className='rounded-3xl min-h-screen' />
 
                         <div className={`${bgColors.primary} text-white absolute top-4 left-10 shadow z-10 px-4 py-3 rounded-xl`}>
                             <div className='flex justify-between '>
