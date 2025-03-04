@@ -9,8 +9,8 @@ import Count from '@/utilites/Count';
 
 const ShortStats = () => {
     return (
-        <div className='md:flex  items-center  container mx-auto justify-between'>
-         <section className='md:w-1/2 px-4 md:px-0'>
+        <div className='lg:flex  items-center  lg:container mx-auto justify-between'>
+         <section className='lg:w-[60%] px-4 lg:px-0'>
             <h6 className={`public-sans ${colors.secondary} `}>Corporate Profile</h6>
             <h1 className='font-bold py-3 mt-2 text-gray-900 text-5xl  '>Partnering for a  Sustainable Future</h1>
             <article className='md:flex gap-4 mt-8'>
@@ -36,8 +36,8 @@ const ShortStats = () => {
 
 
               {/*count down  */}
-         <section className='bg-gray-100 py-44 px-10'>
-            <div className='flex items-center gap-14 border-b border-gray-200 pb-8'>
+         <section className='bg-gray-100 flex-1 w-full py-44 px-10'>
+            <div className='flex items-center gap-10 border-b border-gray-200 pb-8'>
               <div >
               <h1 className={`${colors.third} font-semibold text-3xl flex min-w-20`}>$ <Count count={48}/> </h1>
               <p className={`${colors.secondary} w-3`}>billions</p>
@@ -50,7 +50,7 @@ const ShortStats = () => {
 
 
             </div>
-            <div className='flex border-b border-gray-200 pb-8 items-center mt-8 gap-14'>
+            <div className='flex border-b border-gray-200 pb-8 items-center mt-8 gap-10'>
               <div >
               <h1 className={`${colors.third} font-semibold text-3xl flex min-w-20`}>$ <Count count={30}/> </h1>
               <p className={`${colors.secondary} w-3`}>Employees</p>
@@ -63,7 +63,7 @@ const ShortStats = () => {
 
 
             </div>
-            <div className='flex border-gray-200 pb-8 items-center mt-8 gap-14'>
+            <div className='flex border-gray-200 pb-8 items-center mt-8 gap-10'>
               <div >
               <h1 className={`${colors.third} font-semibold text-3xl flex min-w-20`}>$ <Count count={98}/> </h1>
               <p className={`${colors.secondary} w-3`}>Production Sites</p>
