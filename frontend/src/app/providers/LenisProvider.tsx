@@ -1,17 +1,14 @@
 'use client'
 import React, { ReactNode, useEffect, useRef } from 'react';
-import Lenis from 'lenis'
-import 'lenis/dist/lenis.css'
+import Lenis from 'lenis';
+import 'lenis/dist/lenis.css';
 
-
-interface linesProvider {
-    children: ReactNode
+interface LenisProviderProps {
+  children: ReactNode;
 }
 
-const LenisProvider:React.FC<linesProvider> = ({children}) => {
-
-
-    const lenisRef = useRef<Lenis | null>(null);
+const LenisProvider: React.FC<LenisProviderProps> = ({ children }) => {
+  const lenisRef = useRef<Lenis | null>(null); 
 
   useEffect(() => {
     const lenis = new Lenis({
@@ -21,7 +18,7 @@ const LenisProvider:React.FC<linesProvider> = ({children}) => {
 
     lenisRef.current = lenis;
 
-    function raf(time:number) {
+    function raf(time: number) {
       lenis.raf(time);
       requestAnimationFrame(raf);
     }
@@ -31,11 +28,12 @@ const LenisProvider:React.FC<linesProvider> = ({children}) => {
       lenis.destroy();
     };
   }, []);
-    return (
-        <div  ref={lenisRef } className="smooth-scroll">
-            {children}
-        </div>
-    );
+
+  return (
+    <div className="smooth-scroll"> {/* Removed incorrect ref */}
+      {children}
+    </div>
+  );
 };
 
 export default LenisProvider;
