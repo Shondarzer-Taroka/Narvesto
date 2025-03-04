@@ -159,6 +159,8 @@ backend/.env
 
 # vercel
 .vercel
+frontend/.vercel
+backend/.vercel
 
 # typescript
 *.tsbuildinfo
