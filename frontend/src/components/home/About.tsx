@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 import AboutSection from './AboutSection';
+import HoverBoxes from './HoverBoxes';
 
 const AboutUs = () => {
   return (
@@ -21,6 +22,7 @@ const AboutUs = () => {
 
 
     <AboutSection/>
+    <HoverBoxes/>
     
     </section>
   );
