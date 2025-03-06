@@ -16,12 +16,12 @@ const steps = [
   {
     id: "03",
     title: "Start the in-depth design process",
-    image: "https://via.placeholder.com/1200x600?text=Image+3",
+    image: "https://html.kodesolution.com/2024/stratify-html/assets/images/professional/professional-image.jpg",
   },
   {
     id: "04",
     title: "Assembly Home",
-    image: "https://via.placeholder.com/1200x600?text=Image+4",
+    image: "https://html.kodesolution.com/2024/stratify-html/assets/images/choose/choose-one-image.jpg",
   },
 ];
 
