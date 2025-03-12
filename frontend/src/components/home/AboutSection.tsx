@@ -29,6 +29,7 @@ const AboutSection = () => {
             style={{ transform: `translateY(${offset}px)`, transition: "transform 0.2s ease-out" }}
           />
         </div>
+        
       </div>
 
       {/* Right Side: Content */}
