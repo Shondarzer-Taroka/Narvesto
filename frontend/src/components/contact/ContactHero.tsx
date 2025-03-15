@@ -5,8 +5,8 @@ import { FaUserFriends, FaHeadset, FaIndustry } from "react-icons/fa";
 
 const ContactHero = () => {
   return (
-    <div className="flex justify-center items-center min-h-screen bg-[#f3edf9] p-6">
-      <div className="bg-gradient-to-r from-[#5f1d97] to-[#6233a7] text-white p-10 rounded-3xl max-w-3xl shadow-lg relative">
+    <div className="flex justify-center items-center rounded-xl h-full bg-gradient-to-r from-[#5f1d97] to-[#6233a7] p-6">
+      <div className=" text-white p-10 rounded-3xl max-w-3xl relative">
         {/* Background Wavy Effect */}
         <div className="absolute inset-0 opacity-30">
           <svg viewBox="0 0 1440 320" className="absolute bottom-0 w-full">
