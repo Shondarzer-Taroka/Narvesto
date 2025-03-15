@@ -8,21 +8,21 @@ const ContactSection = () => {
         {/* Contact Info */}
         <div className="space-y-6 grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="flex items-center gap-4">
-            <FiPhone className="text-gray-800 w-6 h-6" />
+            <FiPhone size={24} color="#1F2937"  />
             <div>
               <h3 className="text-lg font-semibold text-gray-800">Call Number</h3>
               <p className="text-gray-600">+25 2551 3694</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <FiMail className="text-gray-800 w-6 h-6" />
+            <FiMail size={24} color="#1F2937"  />
             <div>
               <h3 className="text-lg font-semibold text-gray-800">Email Address</h3>
               <p className="text-gray-600">virtusync@mail.com</p>
             </div>
           </div>
           <div className="flex items-center gap-4">
-            <FiMapPin className="text-gray-800 w-6 h-6" />
+            <FiMapPin size={24} color="#1F2937" />
             <div>
               <h3 className="text-lg font-semibold text-gray-800">Office Address</h3>
               <p className="text-gray-600">Ulitsa Lyuksemburg, Tomsk Oblast, Russia</p>
