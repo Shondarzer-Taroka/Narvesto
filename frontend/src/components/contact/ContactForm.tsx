@@ -22,10 +22,13 @@ const ContactForm: React.FC = () => {
     };
 
     return (
-        <div className="flex justify-center items-center h-full ">
-            <div className="bg-[#f0e8ff] w-full max-w-lg">
-                <h2 className="text-2xl font-bold text-[#3b217c]">Get In Touch With Us</h2>
-                <p className="text-gray-500 mb-6">Lorem ipsum dolor sit amet, adipiscing elit.</p>
+        <div className="flex justify-center  items-center w-full max-w-lg h-full ">
+            <div className="bg-[#f0e8ff] flex justify-between flex-col h-full ">
+                <div>
+                    <h2 className="text-2xl font-bold text-[#3b217c]">Get In Touch With Us</h2>
+                    <p className="text-gray-500 mb-6">Lorem ipsum dolor sit amet, adipiscing elit.</p>
+                </div>
+
 
                 <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                     {/* Name Field */}
@@ -98,6 +101,8 @@ const ContactForm: React.FC = () => {
                         Send Messages
                     </button>
                 </form>
+
+                
             </div>
         </div>
     );
